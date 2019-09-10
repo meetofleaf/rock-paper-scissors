@@ -56,6 +56,7 @@ while True:
         os.system('cls')
         continue
     else:
-        print("Player 1:" + str(score_list[0]) +", Score: "+ str(score_list[0].count(1)))
+        print("\nPlayer 1:" + str(score_list[0]) +", Score: "+ 
+str(score_list[0].count(1)))
         print("Player 2:" + str(score_list[1]) +", Score: "+ str(score_list[1].count(1)))
         exit()
