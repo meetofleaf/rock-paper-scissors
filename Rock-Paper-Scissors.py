@@ -5,7 +5,7 @@ game_dict = {1: 'Rock', 2: 'Paper', 3: 'Scissors'}
 
 score_list = [[],[]]
 
-def score(z):
+def score(z):                                                           # Function to keep scores
     global score_list
     if z==0:
         score_list[0].append(1)
@@ -17,7 +17,7 @@ def score(z):
         score_list[0].append(0)
         score_list[1].append(0)
 
-def compare(weapon1, weapon2):                              # Weapon comparison Fn
+def compare(weapon1, weapon2):                                          # Weapon comparison Fn
     diff = weapon1 - weapon2
 
     if diff in [1, -2]:
@@ -39,20 +39,20 @@ while True:
     print("Rock: 1  |  Paper: 2  |  Scissors: 3")
     print("````````````````````````````````````\n")
     
-    player1 = int(getpass.getpass("Choose your weapon Player 1: "))
-    player2 = int(getpass.getpass("Choose your weapon Player 2: "))
+    player1 = int(getpass.getpass("Choose your weapon Player 1: "))     # Player 1 chooses a weapon
+    player2 = int(getpass.getpass("Choose your weapon Player 2: "))     # Player 2 chooses a weapon
 
-    if player1 and player2 not in (1, 2, 3):                # Checking for valid inputs
+    if player1 and player2 not in (1, 2, 3):                            # Checking for valid inputs
         print("Invalid Input!")
     else:
         weapon_1 = str(game_dict.get(player1))
         weapon_2 = str(game_dict.get(player2))
         print("\n" + weapon_1 + "   Vs   " + weapon_2)
 
-        compare(player1, player2)                               # Comparing weapons to find the winner
+        compare(player1, player2)                                       # Comparing weapons to find the winner
     
     i = input("Enter 'r' to replay  OR  anything else to exit: ")
-    if i == 'r':                                            # Replay option
+    if i == 'r':                                                        # Replay option
         os.system('cls')
         continue
     else:
