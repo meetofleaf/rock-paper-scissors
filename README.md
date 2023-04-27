@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors Game in Python 3
+# Rock-Paper-Scissors 2018
 This repository contains a command-line implementation of the popular game "Rock-Paper-Scissors" programmed in Python 3. The game allows two human players to play against each other by selecting one of three options: rock, paper, or scissors.
 
 ### Game Play
