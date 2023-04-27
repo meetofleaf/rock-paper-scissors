@@ -1,13 +1,13 @@
-# rock-paper-scissors
-Rock-paper-scissors programmed in Python 3.
+#Rock-Paper-Scissors Game in Python 3
+This repository contains a command-line implementation of the popular game "Rock-Paper-Scissors" programmed in Python 3. The game allows two human players to play against each other by selecting one of three options: rock, paper, or scissors.
 
-An old Command-line game I programmed, where 2 human players play choose 1 out of Rock, Paper, Scissors turn by turn.
-Then a function compares the selection and decides who wins.
-A score function keeps score of wins, loses and ties; and is displayed when the players quit.
+###Game Play
+To start playing, simply run the rock_paper_scissors.py file and follow the instructions on the command line. The game is played turn by turn, with each player making a selection. A function then compares the two selections and determines the winner. A score function keeps track of the number of wins, losses, and ties, and displays the summary at the end of the game.
 
-You can play it by using number keys above the alphabet keys and numpad keys, cover your selection with the other hand so the other player doesn't cheat.
-Then when you quit, you'll get a summary of scores of both the players.
+###How to Play
+During the game, players can make their selection by entering the corresponding number (1 for rock, 2 for paper, 3 for scissors) on the command line. The game will then display the winner of each turn, as well as the current score. To quit the game, players can enter 'q' or 'quit' when prompted.
 
-Suggestions & Improvements are much appreciated.
+###Suggestions and Improvements
+This project is open to suggestions and improvements. If you have any feedback or ideas to enhance the game, please feel free to submit a pull request or open an issue in the repository.
 
-Thank You!
+Thank you for playing!
